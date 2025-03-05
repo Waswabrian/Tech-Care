@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>about us</title>
+</head>
+<body class="text-center">
+<!--navbar-->
+<nav class=" navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img class="rounded-pill"  style="width:60px;" id="image1" src="{{url_for('static',filename='Untitled.jpeg')}}"  alt="">
+<!--             <img src="Untitled.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill">-->
+            <p id="heading" class="h2 text-primary">Tech-Care Center</p>
+        </a>
+
+
+    <div>
+        <ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link " href="/home">Home</a>
+    </li>
+   <li class="nav-item">
+        <a class="nav-link"   href="/doctor">Doctor</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link"   href="/service">Service</a>
+    </li>
+    <li class="nav-item">
+        <a href="{{ url_for('logout') }}" class="nav-link">Logout</a>
+	
+    </li>
+   </ul>
+    </div>
+
+     <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+     </div>
+
+    </nav>
+<h1 class="text-center">About us</h1>
+
+<p class="text">
+    Tech-Care Center is an online clinic that provides health care center services for online users.</p>
+    
+<p class="text">It works by taking in symptoms keyed in by the patient and gives back feedback that includes:
+    <ul class="list-group text-center" style="width:100%;padding-left:20%;padding-right:20%;">
+        <li class="list-group-item">Disease Name</li>
+        <li class="list-group-item">Disease Discreption</li>
+        <li class="list-group-item">Medicine Recommendation</li>
+        <li class="list-group-item">Precautiond</li>
+        <li class="list-group-item">Diet recomendations</li>
+        <li class="list-group-item">Exercise To do</li>
+    </ul>
+</p>
+
+<p class="text">We are available 24/7</p>
+<p class="text">For more information, contact us at:
+    gmail:<a href="#">techcarecenter@gmail.com</a>
+    Instagram:<a href="#">tech_care_center</a>
+    X:<a href="#">tech-carecenter</a>
+    facebook:<a href="#">techcarecenter</a>
+    reddit:<a href="#">techcarecenter</a>
+</p>
+
+<footer class="footer bg-dark" style="margin-top:13%;padding-bottom:15px;">
+    <P class="p text-center">Join us today and live a healthy, lovely and happy life.</P>
+    <p class="info text-light text-center">Copyright @:<a href="#">brianwaswa@kabarak.ac.ke</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
